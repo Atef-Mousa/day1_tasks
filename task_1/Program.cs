@@ -7,6 +7,7 @@
             int smallCarpetPrice = 25;
             int largeCarpetPrice = 35;
             double taxRate = 0.06;
+            const int validDays = 30 ;
             Console.WriteLine("Estimate for carpet cleaning service");
             Console.Write("Number of small carpets : ");
             int smallCarpet = Convert.ToInt32(Console.ReadLine());
@@ -23,7 +24,7 @@
             Console.WriteLine($"Tax : ${tax}");
             Console.WriteLine("===============================");
             Console.WriteLine($"Total estimate: ${costAfterTax}");
-            Console.WriteLine("This estimate is valid for 30 days");
+            Console.WriteLine($"This estimate is valid for {validDays} days");
         }
     }
 }
